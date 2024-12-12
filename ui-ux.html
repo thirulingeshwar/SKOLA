@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn UI/UX Design</title>
+    <style>
+        /* Resetting margins and paddings */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Header Section */
+        .header {
+            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #388e3c;
+        }
+
+        /* About Section */
+        .about {
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            color: #ddd;
+            line-height: 1.8;
+        }
+
+        .features ul {
+            padding-left: 20px;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer Section */
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Welcome to UI/UX Design Learning</h1>
+            <p>Master the art of designing intuitive and user-friendly digital experiences.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqIQc7ndLFZt7ifvHJiaUnCg__ucPqOwKgOSw8mea3H6RF2w/viewform?usp=header" class="btn">Apply Now</a>
+        </div>
+    </div>
+
+    <section class="about" id="learn-more">
+        <div class="container">
+            <h2>What is UI/UX Design?</h2>
+            <p>
+                UI/UX Design focuses on creating seamless user experiences and visually appealing interfaces. 
+                It combines creativity and technical skills to design applications, websites, and products that users love.
+            </p>
+            <div class="features">
+                <h3>Why Learn UI/UX Design?</h3>
+                <ul>
+                    <li>Design Intuitive User Interfaces</li>
+                    <li>Enhance User Satisfaction</li>
+                    <li>High Demand in Tech Industries</li>
+                    <li>Shape Digital Products with Creativity</li>
+                    <li>Collaborate with Developers and Product Teams</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Learn UI/UX Design | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
